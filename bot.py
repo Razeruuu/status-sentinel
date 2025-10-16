@@ -36,5 +36,6 @@ async def on_presence_update(before, after):
                 await msg.delete()
 
 import os
-bot.run(os.getenv("DISCORD_TOKEN"))
 
+TOKEN = os.getenv("DISCORD_TOKEN")
+bot.run(TOKEN)
